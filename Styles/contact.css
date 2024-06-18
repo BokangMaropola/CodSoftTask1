@@ -1,0 +1,131 @@
+main {
+    width: 100%;
+    position: absolute;
+}
+
+.contact_form {
+    position: fixed;
+    width: 1300px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -40%;
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    position: relative;
+    width: calc(1300px - 500px);
+}
+
+main img {
+    height: 500px;
+    aspect-ratio: 1/1;
+}
+
+.switch {
+    flex: 10%;
+}
+
+#switch_p2b {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+#switch_p2b:hover {
+    cursor: pointer;
+}
+
+#switch_p2b:active {
+    background-color: #FA6A93;
+}
+
+.switchable {
+    width: calc(1300px - 500px);
+}
+
+input[type="text"], input[type="email"], textarea {
+    font-size: 30px;
+}
+
+.switchableInput {
+    height: 40px;
+    margin: 50px 0 25px 0;
+    padding: 0 10px;
+}
+
+#name {
+    width: calc(((1300px - 500px) / 2) - (40px + 10px));
+    margin-left: 20px;
+}
+
+#lastname {
+    width: calc(((1300px - 500px) / 2) - (40px + 10px));
+    margin-right: 15px;
+    float: right;
+}
+
+#c_name {
+    width: calc(((1300px - 500px) - (40px + 20px)));
+    margin-left: 20px;
+}
+
+#email {
+    width: calc(((1300px - 500px) - (40px + 20px)));
+    margin: 0 0 25px 20px;
+    padding: 0 10px;
+}
+
+.message {
+    width: calc(1300px - 500px);
+}
+
+.message label {
+    margin-left: 20px;
+}
+
+#messagebox {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    width: calc((1300px - 500px) - (40px + 20px));
+    height: calc(370px - (50px * 3));
+    margin: 0 20px;
+    padding: 10px;
+    resize: none;
+}
+
+.sumbit_area {
+    position: absolute;
+    width: 100%;
+}
+
+#submit {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    left: 50%;
+    translate: -50% 0;
+    border: none;
+    background-color: #FA6A93;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: whitesmoke;
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 0px 10px 0px;
+    bottom: 10px;
+    height: 10vh;
+    width: 100%;
+    background-color: #FA6A93;
+    z-index: -1;
+}

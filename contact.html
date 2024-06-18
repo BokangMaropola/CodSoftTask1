@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/aio_style.css" type="text/css" />
+    <link rel="stylesheet" href="Styles/contact.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <title>Johnny Hart Graphics Designer</title>
+  </head>
+  <body>
+    <style>
+      /*Incase I need strong local edits*/
+    </style>
+    <script src="Scripts/contact.js"></script>
+
+    <header>
+      <!--Likely a temporay title (fix head later to if nessary)-->
+      <div class="title_hero">
+        <h1>
+          <span id="title_pt1">Johnny Hart</span>
+          <span id="title_pt2">Graphics Designer</span>
+        </h1>
+        <h2>I put my heart into it</h2>
+      </div>
+      <div class="nav_bar">
+        <div class="breadcrumbs">
+          <ul>
+            <li id="crumb_home"><a href="index.html">Home</a></li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="nav_bar_nav_buttons">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery & Contributions</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="contact_form">
+        <form action="">
+          <div class="switch">
+            <input
+              type="button"
+              value="For Bussiness?"
+              id="switch_p2b"
+              onclick="P2B()"
+            />
+          </div>
+          <div class="switchable" id="personal" style="display: inline-block">
+            <input
+              type="text"
+              name="name"
+              class="switchableInput leftInput"
+              id="name"
+              placeholder="First name"
+            />
+            <input
+              type="text"
+              name="lastname"
+              class="switchableInput"
+              id="lastname"
+              placeholder="Last name"
+            />
+            <br />
+          </div>
+          <div class="switchable" id="business" style="display: none">
+            <input
+              class="switchableInput"
+              type="text"
+              name="c_name"
+              id="c_name"
+              placeholder="Company name"
+            />
+          </div>
+          <input type="email" name="email" id="email" placeholder="Email" />
+          <div class="message">
+            <label for="messagebox">Please give extra information here:</label>
+            <br />
+            <textarea name="messagebox" id="messagebox"> </textarea>
+          </div>
+          <div class="submit_area">
+            <input type="submit" value="Submit" id="submit" />
+          </div>
+        </form>
+        <img src="Media/colorful-4719046_1280.jpg" alt="polydog" />
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="socials">
+        <img
+          src="Media/facebook_logo.png"
+          alt="facebook_logo"
+          class="social_media"
+        />
+        <img
+          src="Media/instagram_logo.png"
+          alt="instagram_logo"
+          class="social_media"
+        />
+        <img
+          src="Media/linkedin_logo.png"
+          alt="linkedin_logo"
+          class="social_media"
+        />
+        <img
+          src="Media/twitter_logo.png"
+          alt="twitter_logo"
+          class="social_media"
+        />
+      </div>
+      <div class="footer_sole">
+        <p>
+          &copy;CodSoft | Dev: Bokang Maropola | &copy;Johnny Hart Graphics
+          Designer
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
